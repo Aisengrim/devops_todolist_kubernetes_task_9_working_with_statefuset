@@ -1,6 +1,4 @@
 #!/bin/bash
-kind create cluster --config cluster.yml
-kubectl apply -f .infrastructure/mysql-namespace.yaml
 kubectl apply -f .infrastructure/namespace.yml
 kubectl apply -f .infrastructure/st-configMap.yaml
 kubectl apply -f .infrastructure/st-secret.yaml
